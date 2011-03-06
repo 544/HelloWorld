@@ -229,6 +229,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -273,8 +275,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>13</integer>
-									<integer>9</integer>
+									<integer>7</integer>
+									<integer>5</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -309,14 +311,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>HelloWorld.m</string>
+								<string>AppDelegate_iPhone.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -324,11 +324,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>HelloWorld.m</string>
+										<string>AppDelegate_iPhone.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>69BD87E01323DB9700D025C6</string>
+										<string>69BD87E31323E47200D025C6</string>
 										<key>history</key>
 										<array>
 											<string>69A6FC6D132373530042BBE4</string>
@@ -338,8 +338,8 @@
 											<string>69A6FD1E1323CE630042BBE4</string>
 											<string>69A6FD231323CE7B0042BBE4</string>
 											<string>69BD87951323D7BD00D025C6</string>
+											<string>69BD87E21323E47200D025C6</string>
 											<string>69BD87961323D7BD00D025C6</string>
-											<string>69BD87CC1323D9AF00D025C6</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -537,12 +537,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>69BD87A71323D82C00D025C6</string>
 		<string>69BD87AB1323D82C00D025C6</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>69A6FC5C132372660042BBE4</string>
-		<string>69BD87A71323D82C00D025C6</string>
-		<string>69BD87AA1323D82C00D025C6</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>69A6FC5C132372660042BBE4</string>
+		<string>69BD87AA1323D82C00D025C6</string>
 		<string>/Users/masato/app/HelloWorld/HelloWorld.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -760,7 +760,7 @@
 			<key>WindowToolGUID</key>
 			<string>1CD10A99069EF8BA00B06720</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -1186,7 +1186,7 @@
 			<key>WindowToolGUID</key>
 			<string>69BD87A71323D82C00D025C6</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

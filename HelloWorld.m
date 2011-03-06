@@ -33,6 +33,7 @@
 	[_image release];
 	// タッチ情報の解放
 	[_touches release];
+	
 	[super dealloc];
 }
 
