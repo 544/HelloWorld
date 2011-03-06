@@ -46,7 +46,7 @@
 					 
 	//時刻を表示してみる。
 	
-	NSCalendar * 	calender = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+	NSCalendar * 	calender = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar ];
 	//日付コンポーネントの取得
  unsigned int unitFlag = NSYearCalendarUnit|NSMonthCalendarUnit|NSDayCalendarUnit |
 		 NSHourCalendarUnit | NSMinuteCalendarUnit;
@@ -59,6 +59,7 @@
 	
 	[textdate drawAtPoint:CGPointMake(0, 48) withFont:font];
 	
+	[calender release];
 }
 
 @end
