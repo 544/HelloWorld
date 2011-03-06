@@ -10,7 +10,11 @@
 
 //HelloWorldの宣言
 @interface HelloWorld : UIView {
-//
+	
+	// 画像用変数の宣言
+	UIImage * _image;
+	// 
+	NSMutableArray * _touches;
 	
 }
 
