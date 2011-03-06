@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>69A6FC59132372660042BBE4</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>HelloWorld.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>69A6FC5A132372660042BBE4</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>HelloWorld.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>69A6FC71132373530042BBE4</string>
-						<key>history</key>
-						<array>
-							<string>69A6FC4C1323723D0042BBE4</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {750, 461}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>53 271 750 502 0 0 1280 778 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -314,8 +273,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
+									<integer>9</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -339,7 +297,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>36 55 1243 723 0 0 1280 778 </string>
+						<string>37 55 1243 723 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -357,7 +315,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppDelegate_iPad.m</string>
+								<string>HelloWorld.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -365,19 +323,20 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AppDelegate_iPad.m</string>
+										<string>HelloWorld.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>69A6FC70132373530042BBE4</string>
+										<string>69A6FCC6132398190042BBE4</string>
 										<key>history</key>
 										<array>
 											<string>69A6FC4F132372660042BBE4</string>
-											<string>69A6FC6B132373530042BBE4</string>
-											<string>69A6FC6C132373530042BBE4</string>
 											<string>69A6FC6D132373530042BBE4</string>
 											<string>69A6FC6E132373530042BBE4</string>
-											<string>69A6FC6F132373530042BBE4</string>
+											<string>69A6FC8113238DE90042BBE4</string>
+											<string>69A6FC8213238DE90042BBE4</string>
+											<string>69A6FCBE132395430042BBE4</string>
+											<string>69A6FCC0132395430042BBE4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -391,7 +350,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {1035, 630}}</string>
 								<key>RubberWindowFrame</key>
-								<string>36 55 1243 723 0 0 1280 778 </string>
+								<string>37 55 1243 723 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -411,7 +370,7 @@
 								<key>Frame</key>
 								<string>{{0, 635}, {1035, 47}}</string>
 								<key>RubberWindowFrame</key>
-								<string>36 55 1243 723 0 0 1280 778 </string>
+								<string>37 55 1243 723 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -577,12 +536,11 @@
 	<array>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>69A6FC59132372660042BBE4</string>
 		<string>69A6FC5C132372660042BBE4</string>
 		<string>/Users/masato/app/HelloWorld/HelloWorld.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>36 55 1243 723 0 0 1280 778 </string>
+	<string>37 55 1243 723 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -603,7 +561,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppDelegate_iPad.m</string>
+								<string>HelloWorld.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -612,7 +570,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {500, 218}}</string>
 								<key>RubberWindowFrame</key>
-								<string>285 200 500 500 0 0 1280 778 </string>
+								<string>329 135 500 500 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -638,7 +596,7 @@
 								<key>Frame</key>
 								<string>{{0, 223}, {500, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>285 200 500 500 0 0 1280 778 </string>
+								<string>329 135 500 500 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -670,11 +628,11 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>285 200 500 500 0 0 1280 778 </string>
+			<string>329 135 500 500 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>69A6FC5C132372660042BBE4</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
