@@ -22,12 +22,14 @@
 // 起動完了後に呼ばれる。
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    // Override point for customization after application launch.
+	// ThisCode is HelloWorld ver 1
     UIView* view=[[HelloWorld alloc]
 				  initWithFrame:CGRectMake(0, 20, 728, 1004)];
 	
 	[_window addSubview:view];
 	[view release];
+
+	// This Code is HelloWorld ver 2
 	
 	// ウインドウ生成
 	
