@@ -40,6 +40,49 @@
 	return imageview;
 }
 
+// アラートの表示
+- (void) showAlert: (NSString*)title text:(NSString*) text{
+	UIAlertView* alert = [[[ UIAlertView alloc]
+						   initWithTitle:title message:text
+						   delegate:nil  //デリゲートはない。
+						   cancelButtonTitle:@"YES" otherButtonTitles:@"NO", nil]
+						  autorelease];
+	[alert show];
+}
+// テキストボタンの生成
+- (UIButton*) makeButton:(CGRect)rect text:(NSString*)text tag:(int)tag {
+	//テキストボタンの生成
+	UIButton* button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	[button setFrame:rect];
+	[button setTitle:text forState:UIControlStateNormal];
+	[button setTag:tag];
+	
+	//イベントリスナーを指定
+	[button addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
+	return button;
+}
+
+#define BTN_ALERT 0
+#define BTN_SHEET 2
+// ボタンクリック時に呼ばれる
+- (IBAction) clickButton:(UIButton*)sender {
+	if(sender.tag==BTN_ALERT) {
+		//アラート表示
+		[self showAlert:@"" text:@"ぼたんをおした"];
+	}else if(sender.tag==BTN_SHEET) {
+		//アクションシート表示
+		UIActionSheet* sheet = [[[UIActionSheet alloc]
+								 initWithTitle:@"アクションシート表示"
+								 delegate:self //デリゲートは自分。このクラスで定義したactionSheetデリゲートが呼ばれる。
+								 cancelButtonTitle:@"キャンセル"
+								 destructiveButtonTitle:@"ほげ"
+								 otherButtonTitles:@"ふが" , @"ぴよ", nil ]
+								autorelease];
+		[sheet showInView:self.view];
+	}
+}
+
+
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -62,9 +105,30 @@
 	// イメージビューの生成・配置
 	UIImageView* imageView = [self makeImageView:CGRectMake(0, 50, 80, 80) image:[UIImage imageNamed:@"img.jpg"]];
 	[self.view addSubview:imageView];
+	
+	// アラートを表示するボタン生成
+	UIButton* buttonAlart = [self makeButton:CGRectMake(0, 150, 200, 40) text:@"アラート表示" tag:BTN_ALERT];
+	// イベントリスナーを指定
+	[buttonAlart addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
+	//ボタン配置
+	[self.view addSubview:buttonAlart];
+	
+	// アクションシートを表示するボタン
+	UIButton* buttonActionSheet = [self makeButton:CGRectMake(0, 200, 200, 40) text:@"アクションシート表示" tag:BTN_SHEET];
+	[self.view addSubview:buttonActionSheet];
 }
 
+// アラートビューデリゲートのプロトコルを実装。ボタン表示後に呼ばれる。が、alertViewの定義時にデリゲートをnilにしているので呼ばれない。
+- (void) alertView:(UIAlertView*)alertView didDismissWithButtonIndex:(NSInteger)index {
+	[self showAlert:@"よばれないよ！" text:[NSString stringWithFormat:@"[%d]を押した", index]];
+}
 
+// アクションシートデリゲートのプロトコルを実装。
+- (void) actionSheet:(UIActionSheet*)actionSheet didDismissWithButtonIndex:(NSInteger)index {
+	[self showAlert:@"title" text:[NSString stringWithFormat:@"[%d]番目を押した", index+1]];
+}
+
+// 回転を有効にする。
 // Override to allow orientations other than the default portrait orientation.
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations.

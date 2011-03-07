@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 
-@interface HelloWorld2 : UIViewController {
+@interface HelloWorld2 : UIViewController 
+						<UIAlertViewDelegate, // アラートを使うためのプロトコル実装
+						UIActionSheetDelegate // アクションシートを使うためのプロトコル実装
+						> 
+{
 
 }
 
