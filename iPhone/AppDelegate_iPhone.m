@@ -9,6 +9,7 @@
 #import "AppDelegate_iPhone.h"
 // App用のヘッダ
 #import "HelloWorld.h"
+#import "HelloWorld2.h"
 
 
 @implementation AppDelegate_iPhone
@@ -23,13 +24,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
 	// ThisCode is HelloWorld ver 1
-    UIView* view=[[HelloWorld alloc]
-				  initWithFrame:CGRectMake(0, 20, 728, 1004)];
-	
-	[_window addSubview:view];
-	[view release];
+//    UIView* view=[[HelloWorld alloc]
+//				  initWithFrame:CGRectMake(0, 20, 728, 1004)];
+//	
+//	[_window addSubview:view];
+//	[view release];
 
 	// This Code is HelloWorld ver 2
+	_viewCtl = [[HelloWorld2 alloc] init];
+	[_viewCtl.view setFrame:CGRectMake(0, 20, 320, 460)];
+	[_window addSubview:_viewCtl.view];
+	
 	
 	// ウインドウ生成
 	
@@ -40,6 +45,7 @@
 
 // メモリの解放
 - (void)dealloc {
+	[_viewCtl release];
     [_window release];
     [super dealloc];
 }

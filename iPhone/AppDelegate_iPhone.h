@@ -11,6 +11,7 @@
 // AppDelegeteの宣言
 @interface AppDelegate_iPhone : NSObject <UIApplicationDelegate> {
     UIWindow * _window;
+	UIViewController * _viewCtl;
 }
 
 // プロパティ宣言
