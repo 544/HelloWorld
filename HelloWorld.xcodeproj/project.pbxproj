@@ -15,6 +15,8 @@
 		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		696405C513252C3E00635CF0 /* HelloWorld2.m in Sources */ = {isa = PBXBuildFile; fileRef = 696405C313252C3E00635CF0 /* HelloWorld2.m */; };
+		696405C613252C3E00635CF0 /* HelloWorld2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696405C413252C3E00635CF0 /* HelloWorld2.xib */; };
 		69A6FC4513236F840042BBE4 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A6FC4413236F840042BBE4 /* HelloWorld.m */; };
 		69A6FD1A1323CE560042BBE4 /* img.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 69A6FD191323CE560042BBE4 /* img.jpg */; };
 /* End PBXBuildFile section */
@@ -32,6 +34,9 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HelloWorld_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld_Prefix.pch; sourceTree = "<group>"; };
+		696405C213252C3E00635CF0 /* HelloWorld2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld2.h; sourceTree = "<group>"; };
+		696405C313252C3E00635CF0 /* HelloWorld2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld2.m; sourceTree = "<group>"; };
+		696405C413252C3E00635CF0 /* HelloWorld2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelloWorld2.xib; sourceTree = "<group>"; };
 		69A6FC4313236F840042BBE4 /* HelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
 		69A6FC4413236F840042BBE4 /* HelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.dtrace; };
 		69A6FD191323CE560042BBE4 /* img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = img.jpg; path = iPhone/img.jpg; sourceTree = "<group>"; };
@@ -83,10 +88,9 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				69A6FD191323CE560042BBE4 /* img.jpg */,
-				8D1107310486CEB800E47090 /* HelloWorld-Info.plist */,
-				69A6FC4313236F840042BBE4 /* HelloWorld.h */,
-				69A6FC4413236F840042BBE4 /* HelloWorld.m */,
+				696405C113252BD400635CF0 /* hello2 */,
+				696405901325277400635CF0 /* resource */,
+				6964058A1325271E00635CF0 /* hello1 */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -97,7 +101,6 @@
 				2860E32A111B888700E27156 /* iPad */,
 				2860E324111B887F00E27156 /* iPhone */,
 				28EEBF621118D79A00187D67 /* Shared */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -121,6 +124,35 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6964058A1325271E00635CF0 /* hello1 */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* HelloWorld-Info.plist */,
+				69A6FC4313236F840042BBE4 /* HelloWorld.h */,
+				69A6FC4413236F840042BBE4 /* HelloWorld.m */,
+			);
+			name = hello1;
+			sourceTree = "<group>";
+		};
+		696405901325277400635CF0 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				69A6FD191323CE560042BBE4 /* img.jpg */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+			);
+			name = resource;
+			sourceTree = "<group>";
+		};
+		696405C113252BD400635CF0 /* hello2 */ = {
+			isa = PBXGroup;
+			children = (
+				696405C213252C3E00635CF0 /* HelloWorld2.h */,
+				696405C313252C3E00635CF0 /* HelloWorld2.m */,
+				696405C413252C3E00635CF0 /* HelloWorld2.xib */,
+			);
+			name = hello2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +207,7 @@
 				2860E329111B887F00E27156 /* MainWindow_iPhone.xib in Resources */,
 				2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */,
 				69A6FD1A1323CE560042BBE4 /* img.jpg in Resources */,
+				696405C613252C3E00635CF0 /* HelloWorld2.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +222,7 @@
 				2860E328111B887F00E27156 /* AppDelegate_iPhone.m in Sources */,
 				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
 				69A6FC4513236F840042BBE4 /* HelloWorld.m in Sources */,
+				696405C513252C3E00635CF0 /* HelloWorld2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
