@@ -11,9 +11,10 @@
 
 @interface HelloWorld2 : UIViewController 
 						<UIAlertViewDelegate, // アラートを使うためのプロトコル実装
-						UIActionSheetDelegate // アクションシートを使うためのプロトコル実装
-						> 
+						UIActionSheetDelegate, // アクションシートを使うためのプロトコル実装
+						UITextFieldDelegate> 
 {
+	UITextField* _textfield;
 
 }
 

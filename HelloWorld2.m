@@ -82,6 +82,19 @@
 	}
 }
 
+//テキストフィールドの生成
+- (UITextField*) makeTextField:(CGRect) rect text:(NSString*) text {
+	UITextField* textField = [[[UITextField alloc] init] autorelease];
+	[textField setFrame:rect];
+	[textField setText:text];
+	[textField setBackgroundColor:[UIColor whiteColor]];
+	[textField setBorderStyle:UITextBorderStyleRoundedRect];
+	[textField setKeyboardAppearance:UIKeyboardAppearanceDefault];
+	[textField setKeyboardType:UIKeyboardTypeDefault];
+	[textField setReturnKeyType:UIReturnKeyDone];
+	
+	return textField;
+}
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -116,6 +129,11 @@
 	// アクションシートを表示するボタン
 	UIButton* buttonActionSheet = [self makeButton:CGRectMake(0, 200, 200, 40) text:@"アクションシート表示" tag:BTN_SHEET];
 	[self.view addSubview:buttonActionSheet];
+	
+	// テキストフィールドの作成
+	UITextField* textField = [[self makeTextField:CGRectMake(30, 0, 300, 32) text:@""] retain];
+	[textField setDelegate:self];
+	[self.view addSubview:textField];
 }
 
 // アラートビューデリゲートのプロトコルを実装。ボタン表示後に呼ばれる。が、alertViewの定義時にデリゲートをnilにしているので呼ばれない。
@@ -127,6 +145,14 @@
 - (void) actionSheet:(UIActionSheet*)actionSheet didDismissWithButtonIndex:(NSInteger)index {
 	[self showAlert:@"title" text:[NSString stringWithFormat:@"[%d]番目を押した", index+1]];
 }
+
+// テキストフィールドデリゲートのプロトコルを実装
+// リターン押下時
+- (BOOL) textFieldShouldReturn:(UITextField *)sender {
+	[sender resignFirstResponder]; //ソフトウェアキーボード非表示
+	return YES;
+}
+
 
 // 回転を有効にする。
 // Override to allow orientations other than the default portrait orientation.
