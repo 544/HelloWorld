@@ -10,7 +10,7 @@
 // App用のヘッダ
 #import "HelloWorld.h"
 #import "HelloWorld2.h"
-
+#import "helloWorld3.h"
 
 @implementation AppDelegate_iPhone
 
@@ -31,7 +31,11 @@
 //	[view release];
 
 	// This Code is HelloWorld ver 2
-	_viewCtl = [[HelloWorld2 alloc] init];
+//	_viewCtl = [[HelloWorld2 alloc] init];
+//	[_viewCtl.view setFrame:CGRectMake(0, 20, 320, 460)];
+//	[_window addSubview:_viewCtl.view];
+
+	_viewCtl = [[helloWorld3 alloc] init];
 	[_viewCtl.view setFrame:CGRectMake(0, 20, 320, 460)];
 	[_window addSubview:_viewCtl.view];
 	

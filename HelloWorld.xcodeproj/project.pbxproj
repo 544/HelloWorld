@@ -15,6 +15,8 @@
 		2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2860E32C111B888700E27156 /* AppDelegate_iPad.m */; };
 		2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_iPad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		6909563F1327DB1D0070B747 /* helloWorld3.m in Sources */ = {isa = PBXBuildFile; fileRef = 6909563D1327DB1D0070B747 /* helloWorld3.m */; };
+		690956401327DB1D0070B747 /* helloWorld3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6909563E1327DB1D0070B747 /* helloWorld3.xib */; };
 		696405C513252C3E00635CF0 /* HelloWorld2.m in Sources */ = {isa = PBXBuildFile; fileRef = 696405C313252C3E00635CF0 /* HelloWorld2.m */; };
 		696405C613252C3E00635CF0 /* HelloWorld2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 696405C413252C3E00635CF0 /* HelloWorld2.xib */; };
 		69A6FC4513236F840042BBE4 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 69A6FC4413236F840042BBE4 /* HelloWorld.m */; };
@@ -34,6 +36,9 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Shared/main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HelloWorld_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld_Prefix.pch; sourceTree = "<group>"; };
+		6909563C1327DB1D0070B747 /* helloWorld3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helloWorld3.h; sourceTree = "<group>"; };
+		6909563D1327DB1D0070B747 /* helloWorld3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helloWorld3.m; sourceTree = "<group>"; };
+		6909563E1327DB1D0070B747 /* helloWorld3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = helloWorld3.xib; sourceTree = "<group>"; };
 		696405C213252C3E00635CF0 /* HelloWorld2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld2.h; sourceTree = "<group>"; };
 		696405C313252C3E00635CF0 /* HelloWorld2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld2.m; sourceTree = "<group>"; };
 		696405C413252C3E00635CF0 /* HelloWorld2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelloWorld2.xib; sourceTree = "<group>"; };
@@ -88,6 +93,7 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				6909563B1327DAF30070B747 /* hello3 */,
 				696405C113252BD400635CF0 /* hello2 */,
 				696405901325277400635CF0 /* resource */,
 				6964058A1325271E00635CF0 /* hello1 */,
@@ -124,6 +130,16 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6909563B1327DAF30070B747 /* hello3 */ = {
+			isa = PBXGroup;
+			children = (
+				6909563C1327DB1D0070B747 /* helloWorld3.h */,
+				6909563D1327DB1D0070B747 /* helloWorld3.m */,
+				6909563E1327DB1D0070B747 /* helloWorld3.xib */,
+			);
+			name = hello3;
 			sourceTree = "<group>";
 		};
 		6964058A1325271E00635CF0 /* hello1 */ = {
@@ -208,6 +224,7 @@
 				2860E32F111B888700E27156 /* MainWindow_iPad.xib in Resources */,
 				69A6FD1A1323CE560042BBE4 /* img.jpg in Resources */,
 				696405C613252C3E00635CF0 /* HelloWorld2.xib in Resources */,
+				690956401327DB1D0070B747 /* helloWorld3.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +240,7 @@
 				2860E32E111B888700E27156 /* AppDelegate_iPad.m in Sources */,
 				69A6FC4513236F840042BBE4 /* HelloWorld.m in Sources */,
 				696405C513252C3E00635CF0 /* HelloWorld2.m in Sources */,
+				6909563F1327DB1D0070B747 /* helloWorld3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
